@@ -1,4 +1,5 @@
 <?php
+
 $list=[
     'fatima bobakdi'  =>  ['dwiba','hdidan','romana','autre','autre'],
 
@@ -28,6 +29,8 @@ echo '<br />';
 };
 
 ?>
+
+    
 
 
 
