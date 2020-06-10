@@ -1,5 +1,4 @@
 <?php
-
 $list=[
     'fatima bobakdi'  =>  ['dwiba','hdidan','romana','autre','autre'],
 
@@ -11,22 +10,27 @@ $list=[
 
     'kamal kamal'     =>['ayed lghaba','rgragi','nadiran','autre','autre'],
 ];
+ 
+function répition($a=5,$b=5){
+ global $list;
 
-$Réa=array_rand($list,5);
+  $Réa=array_rand($list,$a);
 
-$nbr=array_rand($Réa,5);
+  $nbr=array_rand($Réa,$b);
+  
+  foreach ($Réa as $cle => $i)
+  {
+    echo 'film de ' .$i.':<br>';
+  
+  
+    foreach ($nbr as $sy)
+  {
+      echo $list[$i][ $sy] . '<br />'; 
+  }
+  echo '<br />';
+  } ;
+} répition(3,3)
 
-foreach ($Réa as $cle => $i)
-{
-  echo 'film de ' .$i.':<br>';
-
-
-  foreach ($nbr as $sy)
-{
-    echo $list[$i][ $sy] . '<br />'; 
-}
-echo '<br />';
-};
 
 ?>
 
